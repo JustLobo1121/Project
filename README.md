@@ -1,3 +1,3 @@
 ### Project duplicate website
 # --------------
-# website to duplicate is pinterest👍
+# copia de pinteres👌

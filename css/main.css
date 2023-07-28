@@ -1,201 +1,314 @@
 html{
     background-color: #121212;
+    text-align: center;
+    font-family: 'REM', sans-serif;
+}
+body {
+    margin: 0;
+    display: grid;
 }
 a {
     text-decoration: none;
 }
-#text {
-    text-align: center;
-    font-family: 'REM', sans-serif;
-    color: white;
-}
-#div-nav-bar {
-    height: 56px;
-}
-#navbar-pinterest {
-    margin-top: 10px;
-    margin-left: 15px;
+li {
     display: flex;
-    height: 50px;
-    flex-direction: row;
-    padding: 5px;
 }
-#home {
-    display: flex;
-    margin: 6px 14.5px 10px 4px;
-}
-#svg {
-    margin-top: 8px;
-    height: 24px;
-    width: 24px;
-    color: #e60023;
-    fill: currentColor;
-    vertical-align: middle;
-}
-#start {
-    display: flex;
-    margin: 15px 10px 15px 15px;
-}
-#explore {
-    display: flex;
-    margin: 15px 10px 15px 15px;
-}
-#create {
-    display: flex;
-    margin: 15px 20px 15px 15px;
-}
-
-#buttom-container {
-    display: flex;
-    margin: 0px 15px 15px 15px;
-    height: 100%;
-    width: 100%;
-}
-.fleft {
-    float: left;
-    margin: 15px 10px 15px 10px;
-}
-.fright {
-    float: right;
-    margin: 15px 10px 15px 10px;
-}
-.search-form {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 40px;
-    border-radius: 40px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    transform: translate(-50%, -50%);
-    background: #fff;
-    transition: all 0.3s ease;
-  
-    &.focus {
-      box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+@media (max-width:1024px) {
+    .fleft {
+        float: left;
+        margin: 15px 10px 15px 10px;
     }
-}
-.search-input {
-    position: absolute;
-    top: 10px;
-    left: 38px;
-    font-size: 14px;
-    background: none;
-    color: #5a6674;
-    width: 195px;
-    height: 20px;
-    border: none;
-    appearance: none;
-    outline: none;
-  
-    &::-webkit-search-cancel-button {
-      appearance: none;
+    .fright {
+        float: right;
+        margin: 15px 10px 15px 10px;
     }
-}
-.search-button {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    height: 20px;
-    width: 20px;
-    padding: 0;
-    margin: 0;
-    border: none;
-    background: none;
-    outline: none!important;
-    cursor: pointer;
-    
-    & svg {
-      width: 20px;
-      height: 20px;
-      fill: #5a6674;
+    #text {
+        color: white;
     }
-}  
-.search-option {
-    position: absolute;
-    text-align: right;
-    top: 10px;
-    right: 15px;
-  
-    div {
-      position: relative;
-      display: inline-block;
-      margin: 0 1px;
-      cursor: pointer;
-      
-      input {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.01;
-        cursor: pointer;
-      }
-      
-      span {
-        position: absolute;
-        display: block;
-        text-align: center;
+    #navbar-pinterest {
+        margin-top: 5px;
+        margin-left: 15px;
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        width: fit-content;
+    }
+    #pinterest-icon {
+        display: flex;
+        margin: 6px 14.5px 10px 4px;
+    }
+    #svg {
+        margin-top: 8px;
+        height: 24px;
+        width: 24px;
+        color: #e60023;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #firsttext {
+        display: flex;
+        margin: 15px 20px 15px 15px;
+    }
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        position: relative;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        background: #929AA3;
-        color: #fff;
-        font-size: 9px;
-        letter-spacing: 1px;
-        line-height: 1;
-        text-transform: uppercase;
-        padding: 4px 7px;
-        border-radius: 12px;
-        top: -18px;
-        transition: all .2s ease-in-out;
-        
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: -3px;
-          left: 50%;
-          transform: translateX(-50%);
-          border-top: 4px solid #929AA3;
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
-          transition: all .2s ease-in-out;
+        width: fit-content;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
         }
-      }
-      
-      &:hover span {
-        opacity: 1;
-        top: -21px;
-      }
-      
-      label {
-        display: block;
-        cursor: pointer;
-      }
-      
-      svg {
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
         height: 20px;
-        width: 20px;
-        fill: #5a6674;
-        opacity: 0.6;
-        transition: all .2s ease-in-out;
-        pointer-events: none;
-      }
+        border: none;
+        appearance: none;
+        outline: none;
       
-      &:hover svg {
-        opacity: 1;
-      }
-      
-      input:checked + label svg {
-        fill: color;
-        opacity: .9;
-      }
-      
-      input:checked + label span {
-        background: color;
-        
-        &::after {
-          border-top-color: color;
+        &::-webkit-search-cancel-button {
+          appearance: none;
         }
-      }
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: fit-content;
+    }
+    .card-image {
+        width: 100%;
+        padding-bottom: 5px;
     }
 }
+@media (max-width:1310px) or (max-width:1440px) {
+    .fleft {
+        float: left;
+        margin: 15px 10px 15px 10px;
+    }
+    .fright {
+        float: right;
+        margin: 15px 10px 15px 10px;
+    }
+    #text {
+        color: white;
+    }
+    #navbar-pinterest {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 15px;
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        width: fit-content;
+    }
+    #pinterest-icon {
+        display: flex;
+        margin: 6px 14.5px 10px 4px;
+    }
+    #svg {
+        margin-top: 8px;
+        height: 24px;
+        width: 24px;
+        color: #e60023;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #firsttext {
+        display: flex;
+        margin: 15px 20px 15px 15px;
+    }
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: -510px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 830px;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
+        height: 20px;
+        border: none;
+        appearance: none;
+        outline: none;
+      
+        &::-webkit-search-cancel-button {
+          appearance: none;
+        }
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: fit-content;
+    }
+    .card-image {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+/*
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: -215px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 540px;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
+        height: 20px;
+        border: none;
+        appearance: none;
+        outline: none;
+      
+        &::-webkit-search-cancel-button {
+          appearance: none;
+        }
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: 1012px;
+    }
+    .card-image {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+*/
