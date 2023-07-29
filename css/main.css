@@ -27,6 +27,7 @@ li {
 .card-image {
     width: 100%;
     padding-bottom: 5px;
+    position: relative;
 }
 #pinterest-icon {
         display: flex;
@@ -42,9 +43,19 @@ li {
 }
 #firsttext {
         display: flex;
-        margin: 15px 20px 15px 15px;
+        margin: 15px 7px 15px 12px;
 }
 .menuhover {
+    position: absolute;
+    bottom: 5%; right: 10%;
+}
+.menuhover {
+    visibility:hidden;
+    opacity: 0;
+}
+.card-image:hover .menuhover{
+    visibility: visible;
+    opacity: 1;
 }
 #svg2 {
     margin-top: 8px;
@@ -53,6 +64,8 @@ li {
     color: #e5e5e5;
     fill: currentColor;
     vertical-align: middle;
+}
+.finder {
 }
 @media (max-width:1024px) {
     #navbar-pinterest {
