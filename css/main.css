@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html{
     background-color: #121212;
     text-align: center;
@@ -351,3 +352,358 @@ li {
         opacity: .5;
     }
 }
+=======
+html{
+    background-color: #121212;
+    text-align: center;
+    font-family: 'REM', sans-serif;
+}
+body {
+    margin: 0;
+    display: grid;
+}
+a {
+    text-decoration: none;
+}
+li {
+    display: flex;
+}
+.fleft {
+    float: left;
+    margin: 15px 10px 15px 10px;
+}
+.fright {
+    float: right;
+    margin: 15px 10px 15px 10px;
+}
+#text {
+    color: white;
+}
+.card-image {
+    width: 100%;
+    padding-bottom: 5px;
+    position: relative;
+}
+#pinterest-icon {
+        display: flex;
+        margin: 6px 14.5px 10px 4px;
+}
+#svg {
+        margin-top: 8px;
+        height: 24px;
+        width: 24px;
+        color: #e60023;
+        fill: currentColor;
+        vertical-align: middle;
+}
+#firsttext {
+        display: flex;
+        margin: 15px 7px 15px 12px;
+}
+.menuhover {
+    position: absolute;
+    bottom: 5%; right: 10%;
+}
+.menuhover {
+    visibility:hidden;
+    opacity: 0;
+}
+.card-image:hover .menuhover{
+    visibility: visible;
+    opacity: 1;
+}
+#svg2 {
+    margin-top: 8px;
+    height: 24px;
+    width: 24px;
+    color: #e5e5e5;
+    fill: currentColor;
+    vertical-align: middle;
+}
+.finder {
+}
+@media (max-width:1024px) {
+    #navbar-pinterest {
+        margin-top: 5px;
+        margin-left: 15px;
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        width: fit-content;
+    }
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
+        height: 20px;
+        border: none;
+        appearance: none;
+        outline: none;
+      
+        &::-webkit-search-cancel-button {
+          appearance: none;
+        }
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: fit-content;
+    }
+    .card-image img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    .card-image:hover img {
+        opacity: .5;
+    }
+    
+}
+@media (max-width:1310px) or (max-width:1440px) {
+    #navbar-pinterest {
+        margin-bottom: 5px;
+        margin-top: 5px;
+        margin-left: 15px;
+        display: flex;
+        height: 50px;
+        align-content: center;
+        flex-direction: row;
+        width: fit-content;
+    }
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: -510px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: 830px;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
+        height: 20px;
+        border: none;
+        appearance: none;
+        outline: none;
+      
+        &::-webkit-search-cancel-button {
+          appearance: none;
+        }
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: fit-content;
+    }
+    .card-image img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    .card-image:hover img {
+        opacity: .5;
+    }
+}
+@media (max-width:320px) {
+    #navbar-pinterest {
+        margin-top: 5px;
+        margin-left: 6px;
+        display: flex;
+        height: 50px;
+        flex-direction: row;
+        width: fit-content;
+    }
+    #pinterest-icon {
+        display: flex;
+        margin: 6px 4px 10px 4px;
+    }
+    #firsttext {
+        display: flex;
+        margin: 15px 0px 15px 15px;
+    } 
+    #buttom-container{
+        display: flex;
+        margin: 0px 0px 15px 15px;
+        height: 100%;
+        width: 100%;
+    }
+    #buttons {
+        display: flex;
+        margin: 15px 10px 0px 10px;
+    }
+    #svgid {
+        margin-top: 0px;
+        height: 24px;
+        width: 24px;
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+    }
+    #searchicon {
+        color: #aaaaaa;
+        fill: currentColor;
+        vertical-align: middle;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    #imguser {
+        margin-top: -4px;
+        width: 32px;
+    }
+    .search-form {
+        visibility: inherit;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        width: fit-content;
+        height: 40px;
+        border-radius: 40px;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        transform: translate(-50%, -50%);
+        background: #313131;
+        transition: all 0.3s ease;
+        &.focus {
+          box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+        }
+    }
+    .search-input {
+        position: absolute;
+        top: 10px;
+        left: 38px;
+        font-size: 14px;
+        background: none;
+        color: #7a9393;
+        width: 195px;
+        height: 20px;
+        border: none;
+        appearance: none;
+        outline: none;
+      
+        &::-webkit-search-cancel-button {
+          appearance: none;
+        }
+    }
+    #div-search {
+        visibility: hidden;
+        width: 0px;
+    }
+    #image {
+        height: 95%;
+        width: 95%;
+        border-radius: 6px;
+    }
+    #content {
+        display: flex;
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+    .fit-content {
+        width: 48%;
+    }
+    .card-image img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+	    transition: .3s ease-in-out;
+    }
+    .card-image:hover img {
+        opacity: .5;
+    }
+}
+>>>>>>> 1852e447d340218bf6bb405ec5925cc5112d2327
